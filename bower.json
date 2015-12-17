@@ -1,0 +1,22 @@
+{
+  "name": "PatternFly blog Wordpress theme",
+  "version": "0.1.0",
+  "homepage": "https://github.com/patternfly/patternfly-site",
+  "authors": [
+    "Robb Hamilton <rhamilto@redhat.com>"
+  ],
+  "description": "Wordpress theme for PatternFly blog",
+  "license": "Apache-2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "library/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "patternfly": "git://github.com/patternfly/patternfly"
+  }
+}
