@@ -76,6 +76,9 @@ body {
 #content {
   position: relative;
 }
+#content a {
+  word-break: break-word;
+}
 .examples {
   margin: 20px 0;
 }
