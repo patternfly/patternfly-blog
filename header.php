@@ -32,7 +32,7 @@
   <body <?php body_class(); ?>>
     <header role="banner">
       <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="icon-bar"></span>
@@ -53,14 +53,12 @@
           </div><!-- end .navbar-header -->
           <div class="navbar-collapse collapse">
             <?php if(of_get_option('search_bar', '1')) {?>
-            <form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+            <form class="navbar-form navbar-right" method="get" id="searchform" action="http://www.google.com/search">
               <div class="form-group">
-                <input name="s" id="s" type="text" class="form-control" autocomplete="off" placeholder="<?php _e('Search','bonestheme'); ?>
-                " data-provide="typeahead" data-items="4" data-source='
-                <?php echo $typeahead_data; ?>
-                '>
+                <input name="q" id="q" type="text" class="form-control" autocomplete="off" placeholder="Search">
+                <input name="sitesearch" type="hidden" value="patternfly.org">
                 <button type="submit" class="btn btn-default">Submit</button>
-              </div><!-- end .form-group -->
+              </div>
             </form>
             <?php } ?>
             <?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>

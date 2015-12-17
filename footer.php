@@ -1,4 +1,4 @@
-    <footer role="contentinfo" class="container" id="widget-footer">
+    <footer role="contentinfo" class="container-fluid" id="widget-footer">
       <hr />
       <div class="row">
         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>

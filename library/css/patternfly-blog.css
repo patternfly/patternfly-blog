@@ -1,4 +1,4 @@
-/* www.patternfly.org */
+/* blog.patternfly.org */
 body {
   font-size: 13px;
   padding-top: 0 !important;
@@ -119,7 +119,7 @@ h3.card-pf-title {
   line-height: 1.1;
 }
 @media (min-width: 768px) {
-  header + .container {
+  header + .container-fluid {
     padding-top: 73px;
   }
 }
@@ -138,40 +138,82 @@ header .navbar.navbar-default .form-group {
   display: block;
 }
 header .navbar.navbar-default .navbar-brand {
-  background: url(../img/patternfly.svg) no-repeat 20px 50%;
+  background: url(../img/patternfly.svg) no-repeat 0 50%;
   height: 40px;
   line-height: 0;
   margin-bottom: 15px;
   margin-top: 15px;
   position: relative;
   text-indent: -9999px;
-  width: 240px;
+  width: 220px;
+}
+@media (min-width: 768px) {
+  header .navbar.navbar-default .navbar-brand {
+    margin-left: 0;
+  }
 }
 header .navbar.navbar-default .navbar-brand:hover:after {
   background: #1F89C7;
   content: '';
   height: 1px;
-  left: 76px;
+  left: 56px;
   position: absolute;
   top: 33px;
   width: 163px;
 }
 header .navbar.navbar-default .navbar-collapse {
-  border-top-color: transparent;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  max-height: auto;
+  border-top-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.95);
+}
+@media (max-width: 991px) {
+  header .navbar.navbar-default .navbar-collapse {
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+  .home header .navbar.navbar-default .navbar-collapse {
+    background: #040404;
+    border-top-color: transparent;
+    box-shadow: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .navbar.navbar-default .navbar-collapse {
+    border-top-style: solid;
+    border-top-width: 1px;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header .navbar.navbar-default .navbar-collapse.collapse {
+    display: none !important;
+    overflow-x: hidden !important;
+  }
+  header .navbar.navbar-default .navbar-collapse.collapse.in {
+    display: block !important;
+    overflow-x: visible !important;
+  }
+}
+@media (min-width: 992px) {
+  header .navbar.navbar-default .navbar-collapse {
+    border-top: 0;
+    box-shadow: none;
+  }
 }
 header .navbar.navbar-default .navbar-collapse .navbar-nav {
   margin-bottom: 0;
   margin-top: 0;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  header .navbar.navbar-default .navbar-collapse .navbar-nav > li {
+    float: none;
+  }
+}
 header .navbar.navbar-default .navbar-form {
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   margin-top: 0;
   padding-bottom: 0;
   padding-top: 0;
@@ -244,6 +286,7 @@ header .navbar.navbar-default .navbar-form .form-control:focus {
 @media (min-width: 768px) and (max-width: 991px) {
   header .navbar.navbar-default .navbar-right {
     float: none !important;
+    margin-right: 0;
   }
 }
 header .navbar.navbar-default .navbar-right > li.active > a,
@@ -270,26 +313,19 @@ header .navbar.navbar-default .navbar-right > li > a {
 header .navbar.navbar-default .navbar-right > li > a:hover {
   color: #fff;
 }
-header .navbar.navbar-default .navbar-right > li.current-menu-item > a,
-header .navbar.navbar-default .navbar-right > li.current-menu-ancestor > a,
-header .navbar.navbar-default .navbar-right > li.current-menu-item:hover > a,
-header .navbar.navbar-default .navbar-right > li.current-menu-ancestor:hover > a {
-  background: #1f1f1f !important;
-  color: #fff !important;
-}
-header .navbar.navbar-default .navbar-right > li:hover,
-header .navbar.navbar-default .navbar-right > li.open {
-  background: #171717;
-}
-header .navbar.navbar-default .navbar-right > li:hover > a,
-header .navbar.navbar-default .navbar-right > li.open > a {
-  background: transparent;
-  color: #fff;
-}
 header .navbar.navbar-default .navbar-toggle {
   background-color: transparent;
   border: none;
+  float: left;
+  margin-bottom: 19px;
+  margin-left: 20px;
+  margin-right: 15px;
   margin-top: 19px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .navbar.navbar-default .navbar-toggle {
+    display: block;
+  }
 }
 header .navbar.navbar-default .navbar-toggle:focus {
   outline: none;
@@ -315,7 +351,7 @@ html #wpadminbar {
   color: #fff;
   height: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .login {
     background-size: 100% auto !important;
   }
@@ -328,7 +364,7 @@ html #wpadminbar {
   padding: 30px 20px 60px 20px;
   margin: 25px 0 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .login form {
     padding-left: 80px;
   }
@@ -438,7 +474,7 @@ fieldset[disabled] .login form input[type=submit].active {
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .login form input[type=email],
   .login form input[type=password],
   .login form input[type=text] {
@@ -459,7 +495,7 @@ fieldset[disabled] .login form input[type=submit].active {
 .login h1 {
   padding-top: 20px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .login h1 {
     margin-left: 80px;
   }
@@ -473,7 +509,7 @@ fieldset[disabled] .login form input[type=submit].active {
 .ie8 .login h1 a {
   background-image: url(../img/patternfly.png);
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .login h1 a {
     margin-left: 0;
   }
@@ -486,7 +522,7 @@ fieldset[disabled] .login form input[type=submit].active {
   padding: 0;
   width: auto;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .login #login {
     bottom: 13%;
     position: absolute;
@@ -501,7 +537,7 @@ fieldset[disabled] .login form input[type=submit].active {
   font-size: 12px;
   font-weight: normal;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .login #login form p.submit {
     width: 300px;
   }
@@ -519,13 +555,13 @@ fieldset[disabled] .login form input[type=submit].active {
   margin: 10px 20px -10px;
   padding: 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .login #login_error,
   .login .message {
     text-align: center;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .login #login_error,
   .login .message {
     margin-left: 80px;
@@ -542,7 +578,7 @@ fieldset[disabled] .login form input[type=submit].active {
   margin: -50px 0 0 20px;
   padding: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .login #nav {
     margin-left: 80px;
   }
