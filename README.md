@@ -1,4 +1,4 @@
-# PatternFly site Wordpress theme based on [WP-Bootstrap](https://github.com/320press/wordpress-bootstrap/)
+# PatternFly Blog Wordpress theme based on [WP-Bootstrap](https://github.com/320press/wordpress-bootstrap/)
 
 ## Development
 
