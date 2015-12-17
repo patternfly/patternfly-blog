@@ -554,7 +554,7 @@ if( !function_exists("theme_styles") ) {
         // This is the compiled css file from LESS - this means you compile the LESS file locally and put it in the appropriate directory if you want to make any changes to the master bootstrap.css.
         wp_register_style( 'patternfly-adjusted', get_template_directory_uri() . '/library/css/patternfly-adjusted.min.css', array(), '1.0', 'all' );
         wp_register_style( 'patternfly-additions', get_template_directory_uri() . '/library/components/patternfly/dist/css/patternfly-additions.min.css', array(), '1.0', 'all' );
-        wp_register_style( 'patternfly-site', get_template_directory_uri() . '/library/css/patternfly-site.min.css', array(), '1.0', 'all' );
+        wp_register_style( 'patternfly-site', get_template_directory_uri() . '/library/css/patternfly-blog.min.css', array(), '1.0', 'all' );
         wp_register_style( 'patternfly-wp', get_stylesheet_uri(), array(), '1.0', 'all' );
 
         wp_enqueue_style( 'patternfly-adjusted' );

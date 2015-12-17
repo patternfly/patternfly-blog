@@ -49,16 +49,16 @@ module.exports = function(grunt) {
           sourceMapURL: 'patternfly-adjusted.css.map'
         }
       },
-      patternflySite: {
+      patternflyBlog: {
         files: {
-          'library/css/patternfly-site.css': 'library/less/patternfly-site.less',
+          'library/css/patternfly-blog.css': 'library/less/patternfly-blog.less',
         },
         options: {
           paths: ['less/'],
           sourceMap: true,
           outputSourceFiles: true,
-          sourceMapFilename: 'library/css/patternfly-site.css.map',
-          sourceMapURL: 'patternfly-site.css.map'
+          sourceMapFilename: 'library/css/patternfly-blog.css.map',
+          sourceMapURL: 'patternfly-blog.css.map'
         }
       }
     },
