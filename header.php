@@ -39,17 +39,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" id="logo" title="<?php echo get_bloginfo('description'); ?>
-              " href="
-              <?php echo home_url(); ?>
-              ">
+            <a class="navbar-brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="https://www.patternfly.org/">
               <?php if(of_get_option('navbar-branding_logo','')!='') { ?>
-              <img src="<?php echo of_get_option('navbar-branding_logo'); ?>
-              " alt="
-              <?php echo get_bloginfo('description'); ?>
-              ">
-              <?php }
-                  if(of_get_option('site_name','1')) bloginfo('name'); ?></a>
+              <img src="<?php echo of_get_option('navbar-branding_logo'); ?>" alt="<?php echo get_bloginfo('description'); ?>">
+              <?php } if(of_get_option('site_name','1')) bloginfo('name'); ?>
+            </a>
           </div><!-- end .navbar-header -->
           <div class="navbar-collapse collapse">
             <?php if(of_get_option('search_bar', '1')) {?>
