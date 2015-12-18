@@ -40,10 +40,6 @@
 
 						</section> <!-- end article section -->
 
-						<footer>
-
-						</footer> <!-- end article footer -->
-
 					</article> <!-- end article -->
 
 					<?php endwhile; ?>
@@ -71,8 +67,6 @@
 					    <section class="post_content">
 					    	<p><?php _e("Sorry, What you were looking for is not here.", "bonestheme"); ?></p>
 					    </section>
-					    <footer>
-					    </footer>
 					</article>
 
 					<?php endif; ?>
@@ -83,5 +77,6 @@
 
 			</div> <!-- end #content -->
 
+			<?php get_footer(); ?>
+
 		</div> <!-- end #overiew -->
-<?php get_footer(); ?>

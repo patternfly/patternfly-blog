@@ -49,8 +49,6 @@ Template Name: Left Sidebar Page
 					    <section class="post_content">
 					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "bonestheme"); ?></p>
 					    </section>
-					    <footer>
-					    </footer>
 					</article>
 
 					<?php endif; ?>
@@ -59,6 +57,7 @@ Template Name: Left Sidebar Page
 
 			</div> <!-- end #content -->
 
+			<?php get_footer(); ?>
+
     </div><!-- end .container -->
 
-<?php get_footer(); ?>

@@ -1,11 +1,6 @@
-    <footer role="contentinfo" class="container-fluid" id="widget-footer">
-      <hr />
-      <div class="row">
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
-        <?php endif; ?>
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
-        <?php endif; ?>
-      </div>
+    <footer class="footer">
+      <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer') ) : ?>
+      <?php endif; ?>
     </footer> <!-- end footer -->
     <?php wp_footer(); // js scripts are inserted using this function ?>
   </body>

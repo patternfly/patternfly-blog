@@ -25,15 +25,12 @@
 
 						</section> <!-- end article section -->
 
-						<footer>
-
-						</footer> <!-- end article footer -->
-
 					</article> <!-- end article -->
 
 				</div> <!-- end #main -->
 
 			</div> <!-- end #content -->
 
+			<?php get_footer(); ?>
+
 		</div> <!-- end #overiew -->
-<?php get_footer(); ?>

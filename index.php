@@ -47,8 +47,6 @@
 					    <section class="post_content">
 					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "bonestheme"); ?></p>
 					    </section>
-					    <footer>
-					    </footer>
 					</article>
 
 					<?php endif; ?>
@@ -59,5 +57,6 @@
 
 			</div> <!-- end #content -->
 
+			<?php get_footer(); ?>
+
 		</div> <!-- end #overiew -->
-<?php get_footer(); ?>
