@@ -700,6 +700,9 @@ strong {
 th {
   font-weight: 600;
 }
+.sidebar li {
+  margin-bottom: 5px;
+}
 .sidebar ul {
   list-style: none;
   margin-left: 0;
