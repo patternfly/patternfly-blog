@@ -700,4 +700,9 @@ strong {
 th {
   font-weight: 600;
 }
+.sidebar ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
 /*# sourceMappingURL=patternfly-blog.css.map */
