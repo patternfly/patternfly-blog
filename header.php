@@ -47,7 +47,7 @@
           </div><!-- end .navbar-header -->
           <div class="navbar-collapse collapse">
             <?php if(of_get_option('search_bar', '1')) {?>
-            <form class="navbar-form navbar-right" method="get" id="searchform" action="http://www.google.com/search">
+            <form class="navbar-form navbar-right" method="get" id="searchform" action="https://www.google.com/search">
               <div class="form-group">
                 <input name="q" id="q" type="text" class="form-control" autocomplete="off" placeholder="Search">
                 <input name="sitesearch" type="hidden" value="patternfly.org">
