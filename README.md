@@ -32,4 +32,4 @@ In development, styling is written and managed through multiple lesscss files. I
 
     grunt build
 
-This task will compile and minify the lesscss files into a single CSS file located at `library/css/bootstrap-custom.min.css`.
+This task will compile and minify the lesscss files into CSS files located at `library/css/*.min.css`.
