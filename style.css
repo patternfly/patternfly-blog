@@ -23,4 +23,20 @@ body.admin-bar .navbar-fixed-top {
   }
 }
 
+article {
+  background: #FFFFFF;
+  margin-top: 20px;
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;"
+}
+
+.horizontal-sep {
+  color: #D5D5D5;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 /* see less/bootstrap-custom.less */

@@ -16,7 +16,18 @@
   
   <footer>
 
-    <p class="tags"><?php the_tags('<span class="tags-title">' . __("Tags","bonestheme") . ':</span> ', ' ', ''); ?></p>
+    <?php if ( get_comments_number() > 0 || comments_open() > 0 || get_the_tags() ) : ?>
+      <hr/>
+    <?php endif; ?>
+    <p>
+    <?php if ( get_comments_number() > 0) : ?>
+      <a href="<?php the_permalink() ?>#comments" title="Responses"><span><?php echo get_comments_number(); ?> </span>Responses</a><span class="horizontal-sep">|</span>
+    <?php endif; ?>
+    <?php if ( comments_open() > 0 ) : ?>
+      <a href="<?php the_permalink() ?>#comment-form-title" title="Comment">Comment</a>
+    <?php endif; ?>
+      <?php the_tags('<span class="tags-title">' . __("<span class=\"horizontal-sep\">|</span>Tags","bonestheme") . ':</span> ', ' ', ''); ?>
+    </p>
     
   </footer> <!-- end article footer -->
 

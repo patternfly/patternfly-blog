@@ -19,7 +19,7 @@
 
 			<div id="content" class="clearfix row">
 
-				<div id="main" class="col-sm-9 col-md-9 col-lg-9 clearfix" role="main">
+				<div id="main" class="col-sm-9 col-md-9 col-lg-9 clearfix cards-pf" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<?php get_template_part( 'content', get_post_format() ); ?>
